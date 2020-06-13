@@ -14,7 +14,7 @@
     "twit": "^2.2.11"
   },
   "scripts": {
-    "start": " react-scripts start  \"NODE_PATH=./src\"",
+    "start": "react-scripts start  \"NODE_PATH=./src\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
