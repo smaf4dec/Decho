@@ -7,12 +7,18 @@ class App extends Component {
   state = {
     currentPage: 'timeline',
   };
+  
+  changePage = (page) => {
+   return () => this.setState({
+      currentPage: page
+    })
+  }
   render() {
     const { currentPage } = this.state;
     return (
       <div className="App">
-        {currentPage === 'landing' && <LandingPage />}
-        {currentPage === 'timeline' && <TimelinePage />}
+        {currentPage === 'landing' && <LandingPage changePage={ this.changePage('timeline') } />}
+        {currentPage === 'timeline' && <TimelinePage  />}
       </div>
     );
   }
