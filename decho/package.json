@@ -10,7 +10,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "react-twitter-widgets": "^1.9.5"
+    "react-twitter-widgets": "^1.9.5",
+    "twit": "^2.2.11"
   },
   "scripts": {
     "start": " react-scripts start  \"NODE_PATH=./src\"",

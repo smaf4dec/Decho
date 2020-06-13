@@ -7,3 +7,4 @@ This app is created with the intention of bursting echochambers. Current social 
 de - Echo takes users twitter account, finds hashtags and generates an opposite feed so user can be aware of their bais / echochamer and see what they are missing and hopefully challenge and inform their views.
 
 #APIs used
+Twitter

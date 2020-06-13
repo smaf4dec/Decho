@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'App.css';
-import Welcome from 'Components/Welcome';
 import LandingPage from 'Pages/LandingPage';
+import Timeline from 'Pages/TimelinePage';
 
-function App() {
-  return (
-    <div className="App">
-      <LandingPage />
-      <Welcome />
-    </div>
-  );
+class App extends Component {
+  state = {
+    currentPage: 'landing',
+  };
+  render() {
+    const { currentPage } = this.state;
+    return (
+      <div className="App">
+        {currentPage === 'landing' && <LandingPage />}
+        {currentPage === 'timeline' && <Timeline />}
+      </div>
+    );
+  }
 }
 
 export default App;
