@@ -35,15 +35,16 @@ const seed = [{id: 1, twitterHandle: "BarackObama", lean: "left"},
 
 //gets collection of opposite people (obama might get Sean Hannity)
 const getOpp = side =>{
-    res = seed.filter(partisan => partisan.lean !== side);
+    let res = seed.filter(partisan => partisan.lean !== side);
     return res;
 }
 
 //gets one opposite person (sarah Palin might get Joe biden)
 const getOneOpp = (side) =>{
-    opps = getOpp(side);
-    oneOpp = opps[Math.floor(Math.random() * opps.length)]
+    let opps = getOpp(side);
+    let oneOpp = opps[Math.floor(Math.random() * opps.length)]
     return oneOpp;
 }
 
 // console.log(getOneOpp('left'))
+module.exports = {getOpp, getOneOpp}
