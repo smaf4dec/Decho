@@ -5,14 +5,15 @@ export default class UserForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      age: null,
+      handle: '',
+      politicalLean: null,
     };
   }
 
   mySubmitHandler = (event) => {
     event.preventDefault();
-    alert("You are submitting " + this.state.username);
+    alert("You are submitting " + this.state.handle);
+    this.props.changePage();
   }
 
   myChangeHandler = (event) => {
@@ -23,25 +24,19 @@ export default class UserForm extends Component {
   render() {
     return (
       <form onSubmit={this.mySubmitHandler}>
-      <h1>Hello {this.state.username} {this.state.age}</h1>
-      <p>Enter your name:</p>
+      <h1>@{this.state.handle}</h1>
+      <p>Twitter Handle:</p>
       <input
         type='text'
-        name='username'
+        name='handle'
         onChange={this.myChangeHandler}
       />
-      <p>Enter your age:</p>
-      <input
-        type='text'
-        name='age'
-        onChange={this.myChangeHandler}
-      />
-      <select onChange={this.myChangeHandler}>
-        <option value="Ford">Ford</option>
-        <option value="Volvo" defaultValue>Volvo</option>
-        <option value="Fiat">Fiat</option>
+      <p>Political Leaning:</p>
+      <select name='politicalLean' onChange={this.myChangeHandler}>
+        <option value="left">Left</option>
+        <option value="right" defaultValue>right</option>
       </select>
-      <input
+      <input className={"btn btn-primary"}
         type='submit'
       />
       </form>
