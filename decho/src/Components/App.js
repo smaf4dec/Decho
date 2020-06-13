@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import 'App.css';
 import LandingPage from 'Pages/LandingPage';
-import Timeline from 'Pages/TimelinePage';
+import TimelinePage from 'Pages/TimelinePage';
 
 class App extends Component {
   state = {
-    currentPage: 'landing',
+    currentPage: 'timeline',
   };
   render() {
     const { currentPage } = this.state;
     return (
       <div className="App">
         {currentPage === 'landing' && <LandingPage />}
-        {currentPage === 'timeline' && <Timeline />}
+        {currentPage === 'timeline' && <TimelinePage />}
       </div>
     );
   }
