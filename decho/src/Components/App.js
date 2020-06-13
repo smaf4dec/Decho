@@ -5,7 +5,7 @@ import TimelinePage from 'Pages/TimelinePage';
 
 class App extends Component {
   state = {
-    currentPage: 'landing',
+    currentPage: 'timeline',
   };
   
   changePage = (page) => {
