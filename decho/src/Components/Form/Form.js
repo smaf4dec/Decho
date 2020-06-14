@@ -27,7 +27,7 @@ export default class UserForm extends Component {
   render() {
     return (
       <form onSubmit={this.mySubmitHandler}>
-        <h1>@{this.state.handle}</h1>
+        <h4>@{this.state.handle}</h4>
         <p>Twitter Handle:</p>
         <input type="text" name="handle" onChange={this.myChangeHandler} />
         <p>Political Leaning:</p>
