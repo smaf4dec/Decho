@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserForm from 'Components/Form';
+import UserForm from '../Components/Form';
 
 export default class LandingPage extends Component {
   render() {
