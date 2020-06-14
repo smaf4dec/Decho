@@ -7,7 +7,7 @@ export default class UserForm extends Component {
     super(props);
     this.state = {
       handle: '',
-      politicalLean: 'right',
+      politicalLean: 'Right',
     };
   }
 
@@ -33,7 +33,7 @@ export default class UserForm extends Component {
         <p>Political Leaning:</p>
         <select name="politicalLean" defaultValue="right" onChange={this.myChangeHandler}>
           <option value="left">Left</option>
-          <option value="right">right</option>
+          <option value="right">Right</option>
         </select>
         <input className={'btn btn-primary'} type="submit" />
       </form>
