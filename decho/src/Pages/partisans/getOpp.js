@@ -46,5 +46,13 @@ const getOneOpp = (side) =>{
     return oneOpp;
 }
 
+async function getOneOppFromServer(side) {
+    // const {data} = await axios.get(`/${side}`);
+    // let oneOpp = data[Math.floor(Math.random() * data.length)]
+    // return oneOpp;
+
+    return await new Promise(resolve => resolve(getOneOpp(side)));
+}
+
 // console.log(getOneOpp('left'))
-module.exports = {getOpp, getOneOpp}
+module.exports = {getOpp, getOneOpp, getOneOppFromServer}
