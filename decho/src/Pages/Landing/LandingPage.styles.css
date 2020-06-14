@@ -1,0 +1,20 @@
+.logo {
+  min-width: 50vmin;
+  max-width: 100vw;
+  min-height: 50vmin;
+  max-height: 100vh;
+  background: linear-gradient(45deg, #349df3 0 50%, #151d2b 50% 100%);
+  padding: 0 50vmax;
+}
+
+.column {
+  /* max-width:500px; */
+  margin: 0 auto;
+}
+
+.landing {
+  background: linear-gradient(#349df3, #ffffff);
+  width: 100vw;
+  /* padding: 0 50vmax; */
+  /* border:0px; */
+}
