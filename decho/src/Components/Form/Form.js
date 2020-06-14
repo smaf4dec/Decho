@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, fragment } from 'react';
 import axios from 'axios';
 import 'Components/Form/Form.styles.css';
 import { ReactComponent as DeChoLogo } from 'assets/logo-orange-sm.svg';
@@ -23,9 +23,9 @@ export default class UserForm extends Component {
 
   myChangeHandler = (event) => {
     let nam = event.target.name;
-    let val = event.target.val;
+    let val = event.target.value;
     this.setState({ [nam]: val });
-    console.log('clicked', val, 'als state', this.state);
+    console.log(val, nam);
   };
 
   handleRadio = (event) => {
@@ -47,62 +47,67 @@ export default class UserForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.mySubmitHandler} style={{ zindex: 20, position: 'absolute' }}>
-        <h4>
-          {' '}
-          <DeChoLogo /> {this.state.handle}
-        </h4>
-        <div className="input-icons">
-          <i className="fa fa-twitter" aria-hidden="true"></i>
-          <img
-            src={twitter}
-            alt=""
-            style={{ width: '5%', height: '9%', position: 'absolute', margin: '11px 0px 0px 10px' }}
-          />
-          <input
-            id="search-bar"
-            type="text"
-            name="handle"
-            style={{ paddingLeft: '50px' }}
-            placeholder="     Twitter handle"
-            onChange={(e) => this.myChangeHandler(e)}
-          />
-        </div>
-        <div className="politicalLean__input">
-          <div className="form__radio__label" id="title">
-            Political Leaning:
-          </div>
-          <div className="form__radio__group">
-            <input
-              type="radio"
-              className="form__radio__input"
-              id="left"
-              name="politicalLean"
-              onClick={(e) => this.handleRadio(e)}
-            />
-            <label htmlFor="left" className="form__radio__label" id="left">
-              Left
-            </label>
-          </div>
-          <div className="form__radio__group">
-            <input
-              type="radio"
-              className="form__radio__input"
-              id="right"
-              name="politicalLean"
-              onClick={(e) => this.handleRadio(e)}
-            />
-            <label htmlFor="right" className="form__radio__label" id="right">
-              Right
-            </label>
-          </div>
-        </div>
+      <div>
+        <div className="header">{this.state.handle.length > 0 && <div>Twitter handle>@{this.state.handle}</div>}</div>
 
-        <br />
-        <button type="submit" onClick={this.mySubmitHandler}>
-          Submit
-        </button>
-      </form>
+        <form onSubmit={(e) => this.myChangeHandler(e)} style={{ zindex: 20, position: 'absolute' }}>
+          <h4>
+            {' '}
+            <DeChoLogo /> {this.state.handle}
+          </h4>
+          <div className="input-icons">
+            <i className="fa fa-twitter" aria-hidden="true"></i>
+            <img
+              src={twitter}
+              alt=""
+              style={{ width: '5%', height: '9%', position: 'absolute', margin: '11px 0px 0px 10px' }}
+            />
+            <input
+              id="search-bar"
+              type="text"
+              name="handle"
+              value={this.state.handle}
+              style={{ paddingLeft: '50px' }}
+              placeholder="     Twitter handle"
+              onChange={(e) => this.myChangeHandler(e)}
+            />
+          </div>
+          <div className="politicalLean__input">
+            <div className="form__radio__label" id="title">
+              Political Leaning:
+            </div>
+            <div className="form__radio__group">
+              <input
+                type="radio"
+                className="form__radio__input"
+                id="left"
+                name="politicalLean"
+                onClick={(e) => this.handleRadio(e)}
+              />
+              <label htmlFor="left" className="form__radio__label" id="left">
+                Left
+              </label>
+            </div>
+            <div className="form__radio__group">
+              <input
+                type="radio"
+                className="form__radio__input"
+                id="right"
+                name="politicalLean"
+                onClick={(e) => this.handleRadio(e)}
+              />
+              <label htmlFor="right" className="form__radio__label" id="right">
+                Right
+              </label>
+            </div>
+          </div>
+
+          <br />
+          <button type="submit" onClick={this.mySubmitHandler}>
+            Submit
+          </button>
+        </form>
+      </div>
     );
   }
 }

@@ -12,6 +12,7 @@ export default class LandingPage extends Component {
         <div className="logo">
           <DeChoLogo id="megaphonoLogo" />
         </div>
+        <div className="text">Minimize your social media echo chambers; Engage in healthy interactions</div>
         <div className="column landing" /*style={{ border: '1px solid black' }}*/>
           <div>
             <UserForm changePage={this.props.changePage} />
