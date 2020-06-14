@@ -8,7 +8,7 @@ const TimelinePage = ({ politicalLean, partisan }) => {
   // console.log(partisan)
   return (
     <div>
-      <div className="page-title">Timeline of {politicalLean === 'right' ? 'left' : 'right'} Tweets</div>;
+      <div className="page-title">Timeline of {politicalLean === 'right' ? 'left' : 'right'} Tweets</div>
       <Timeline
           dataSource={{
             sourceType: 'profile',
