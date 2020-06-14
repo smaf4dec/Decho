@@ -6,7 +6,7 @@
   min-height: 50vmin;
   max-height: 100vh;
   background: linear-gradient(45deg, #349df3 0 50%, #151d2b 50% 100%);
-  padding: 0 50vmax;
+  /* padding: 0 50vmax; */
 }
 
 .column {
@@ -22,7 +22,11 @@
 }
 
 #de-echo-to{
-  color: #FF9D64;
+  background-color: #FF9D64;
   font-family: 'Nunito', sans-serif;
   font-size: 50px;
+  max-width: 20vw;
+  position: relative;
+  margin: auto;
+  top: 20vmin;
 }
