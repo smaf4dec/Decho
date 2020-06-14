@@ -8,7 +8,7 @@ import '../App.css';
 // import { getOneOppFromServer } from '../Utils/getOpp';
 // import LandingPage from '../Pages/Landing//LandingPage';
 // import TimelinePage from '../Pages/Timeline/TimelinePage';
-// import { getOneOppFromServer } from '../Pages/partisans/getOpp';
+// import { getOneOppFromServer } from '../Utils/getOpp';
 
 
 class App extends Component {
