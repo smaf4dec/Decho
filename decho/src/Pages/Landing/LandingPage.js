@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import UserForm from 'Components/Form/Form';
 import 'Pages/Landing/LandingPage.styles.css';
-import {ReactComponent as DeChoLogo} from 'assets/logo-big.svg'
+import { ReactComponent as DeChoLogo } from 'assets/logo-big.svg';
 // import './LandingPage.styles.css';
 // import UserForm from '../Components/Form/Form';
 /*<div id="de-echo-to" className="title">De-Echo</div>*/
@@ -10,7 +10,7 @@ export default class LandingPage extends Component {
     return (
       <div>
         <div className="logo">
-          <DeChoLogo/>
+          <DeChoLogo id="megaphonoLogo" />
         </div>
         <div className="column landing" /*style={{ border: '1px solid black' }}*/>
           <div>

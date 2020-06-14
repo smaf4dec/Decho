@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
-
 .logo {
+  z-index: -10;
   min-width: 50vmin;
   max-width: 100vw;
-  min-height: 50vmin;
+  min-height: 100vh;
   max-height: 100vh;
-  background: linear-gradient(45deg, #349df3 0 50%, #151d2b 50% 100%);
+  background: linear-gradient(60deg, #349df3 0 50%, #151d2b 50% 100%);
   /* padding: 0 50vmax; */
 }
-
+#megaphonoLogo {
+  margin: 181px 0 0 104px;
+}
 .column {
-  /* max-width:500px; */
   margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .logo {
+    min-width: 50vmin;
+    max-width: 100vw;
+  }
 }
 
 .landing {
@@ -21,7 +27,7 @@
   /* border:0px; */
 }
 
-#de-echo-to{
+#de-echo-to {
   background-color: #349df3;
   font-family: 'Nunito', sans-serif;
   font-size: 50px;
