@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import UserForm from '../Components/Form';
+import UserForm from 'Components/Form/Form';
+import 'Pages/Landing/LandingPage.styles.css';
+import './LandingPage.styles.css';
+// import UserForm from '../Components/Form';
 
 export default class LandingPage extends Component {
   render() {
