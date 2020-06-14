@@ -30,7 +30,7 @@ export default class UserForm extends Component {
     return (
       <form onSubmit={this.mySubmitHandler}>
         <h4> <DeChoLogo/> {this.state.handle}</h4>
-        <input type="text" name="handle" placeholder="Twitter Handle" onChange={this.myChangeHandler} />
+        <input id="search-bar" type="text" name="handle" placeholder="Twitter Handle" onChange={this.myChangeHandler} />
         <p>Political Leaning:</p>
         <select name="politicalLean" defaultValue="right" onChange={this.myChangeHandler}>
           <option value="left">Left</option>
