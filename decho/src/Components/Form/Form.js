@@ -39,13 +39,41 @@ export default class UserForm extends Component {
   render() {
     return (
       <form onSubmit={this.mySubmitHandler}>
-        <h4> <DeChoLogo/> {this.state.handle}</h4>
-        <input id="search-bar" type="text" name="handle" placeholder="Twitter Handle" onChange={this.myChangeHandler} />
-        <p>Political Leaning:</p>
-        <select name="politicalLean" defaultValue="right" onChange={this.myChangeHandler}>
-          <option value="left">Left</option>
-          <option value="right">Right</option>
-        </select> <br/>
+        <h4>
+          {' '}
+          <DeChoLogo /> {this.state.handle}
+        </h4>
+        <div class="input-icons">
+          <i class="fa fa-twitter icon" aria-hidden="true"></i>
+          <input
+            id="search-bar"
+            type="text"
+            name="handle"
+            placeholder="Twitter Handle"
+            onChange={this.myChangeHandler}
+          />
+        </div>
+        <div className="politicalLean__input">
+          <div className="form__radio__label" id="title">
+            Political Leaning:
+          </div>
+          <div className="form__radio__group">
+            <input type="radio" className="form__radio__input" id="left" name="size" />
+            <label htmlFor="left" className="form__radio__label" id="left">
+              <span className="form__radio-button"></span>
+              Left
+            </label>
+          </div>
+          <div className="form__radio__group">
+            <input type="radio" className="form__radio__input" id="right" name="size" />
+            <label htmlFor="right" className="form__radio__label" id="right">
+              <span className="form__radio-button"></span>
+              Right
+            </label>
+          </div>
+        </div>
+
+        <br />
         <button className="btn btn-primary" type="submit">
           Submit
         </button>
