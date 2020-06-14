@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+
+import 'Components/App';
+import LandingPage from 'Pages/LandingPage';
+import TimelinePage from 'Pages/TimelinePage';
+import { getOneOppFromServer } from 'Utils/getOpp';
 import '../App.css';
-import LandingPage from '../Pages/LandingPage';
-import TimelinePage from '../Pages/TimelinePage';
-import {getOneOppFromServer} from '../Pages/partisans/getOpp'
+// import { getOneOppFromServer } from '../Utils/getOpp';
+// import LandingPage from '../Pages/Landing//LandingPage';
+// import TimelinePage from '../Pages/Timeline/TimelinePage';
+// import { getOneOppFromServer } from '../Utils/getOpp';
+
 
 class App extends Component {
   state = {
