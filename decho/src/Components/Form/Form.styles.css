@@ -5,7 +5,96 @@ form {
   transform: translate(-50%, 0);
   color: white;
 }
-button {
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(09, 09, 09 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.4s;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid blue;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: grey;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem);
+}
+.form__radio__group {
+  width: 48%;
+  display: inline-block;
+}
+.form__radio__input {
+  display: none;
+}
+input[type='radio'] {
+  display: none;
+}
+.form__radio__label {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5rem;
+}
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -2;
+}
+.form__radio-button::after {
+  content: '';
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.form__radio__input:checked ~ .form__radio__label .form__radio-button:after {
+  opacity: 1;
+}
+.form {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+}
+.button {
   width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -82,7 +171,7 @@ input #search-bar {
 .form__radio-button {
   height: 25px;
   width: 25px;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -91,13 +180,14 @@ input #search-bar {
 .form__radio-button::after {
   content: '';
   display: block;
-  height: 1.3rem;
+  height: 27px;
+  width: 30px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 204);
+  background-color: white;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -123,6 +213,38 @@ input[type='radio']::after {
   font-size: 20px;
 }
 
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+button::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+button:active,
+button:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.header {
+  font-size: 30px;
+  color: green;
+}
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: orange;
+  box-shadow: 0 10px rgba(0, 0, 0, 0 0.2);
+  color: white;
+  border: none;
+  font-size: 20px;
+}
 button:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
