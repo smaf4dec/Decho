@@ -7,7 +7,7 @@ const TimelinePage = ({ politicalLean, partisan }) => {
   console.log(`the partisan is ${partisan.twitterHandle}`)
   // console.log(partisan)
   return (
-    <div>
+    <div class="proto-container">
       <div className="page-title">De-Echo Feed of {politicalLean === 'right' ? 'Left' : 'Right-'}Leaning Tweets</div>;
       <Timeline
           dataSource={{
