@@ -7,6 +7,11 @@
   background: linear-gradient(60deg, #349df3 0 50%, #151d2b 50% 100%);
   /* padding: 0 50vmax; */
 }
+
+#megaphonoLogo:hover {
+  animation: spin 1s infinite linear;
+}
+
 #megaphonoLogo {
   margin: 181px 0 0 104px;
 }
@@ -33,4 +38,12 @@
   position: relative;
   margin: auto;
   top: 20vmin;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
