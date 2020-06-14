@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
 
         </div>
         <div className='column landing' /*style={{ border: '1px solid black' }}*/>
-          <div className="title">Landing page for App de-Echo</div>
+          <div className="title">De-Echo</div>
           <div>
             <UserForm changePage={this.props.changePage} />
           </div>
