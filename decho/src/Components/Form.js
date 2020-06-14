@@ -13,7 +13,6 @@ export default class UserForm extends Component {
 
   mySubmitHandler = (event) => {
     event.preventDefault();
-    alert("You are submitting " + this.state.handle);
     this.props.changePage(this.state.politicalLean);
     this.postToServer()
   }
@@ -27,14 +26,11 @@ export default class UserForm extends Component {
   postToServer = () => {
     const handle = this.state.handle
     const lean = this.state.politicalLean
-    console.log(handle, lean)
     if (handle !== undefined && lean !== undefined) {
       axios.post('https://deco-db.herokuapp.com/users', {
         twitterHandle: handle,
         lean: lean
       })
-        .then(resp => console.log(resp))
-        .catch(err => console.log(err))
     }
   }
 
