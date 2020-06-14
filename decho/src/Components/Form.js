@@ -6,19 +6,21 @@ export default class UserForm extends Component {
     super(props);
     this.state = {
       handle: '',
-      politicalLean: null,
+      politicalLean: 'right',
     };
   }
 
   mySubmitHandler = (event) => {
     event.preventDefault();
     alert("You are submitting " + this.state.handle);
-    this.props.changePage();
+    console.log(this.state.politicalLean)
+    this.props.changePage(this.state.politicalLean);
   }
 
   myChangeHandler = (event) => {
     let nam = event.target.name;
     let val = event.target.value;
+    console.log(val)
     this.setState({[nam]: val});
   }
   render() {
@@ -32,9 +34,9 @@ export default class UserForm extends Component {
         onChange={this.myChangeHandler}
       />
       <p>Political Leaning:</p>
-      <select name='politicalLean' onChange={this.myChangeHandler}>
+      <select name='politicalLean' defaultValue="right" onChange={this.myChangeHandler}>
         <option value="left">Left</option>
-        <option value="right" defaultValue>right</option>
+        <option value="right">right</option>
       </select>
       <input className={"btn btn-primary"}
         type='submit'

@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Timeline } from 'react-twitter-widgets';
-import {getOneOpp} from './partisans/getOpp'
+// import {getOneOpp} from './partisans/getOpp'
 
-const TimelinePage = ({ politicalLean }) => {
-  let partisan = getOneOpp('left').twitterHandle
-  console.log(`the partisan is ${partisan}`)
+const TimelinePage = ({ politicalLean, partisan }) => {
+
+  console.log(`the partisan is ${partisan.twitterHandle}`)
+  // console.log(partisan)
   return (
     <div>
-      <div className="page-title">Timeline of {politicalLean} Tweets</div>;
+      <div className="page-title">Timeline of {politicalLean === 'right' ? 'left' : 'right'} Tweets</div>;
       <Timeline
           dataSource={{
             sourceType: 'profile',
-            screenName: partisan
+            screenName: partisan.twitterHandle
           }}
           options={{
             height: '800'
