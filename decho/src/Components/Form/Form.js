@@ -105,7 +105,7 @@ export default class UserForm extends Component {
           <br />
           <div className="politicalLean__input">
             <div className="form__radio__label" id="title">
-              Political Leaning :
+              Political Leaning
             </div>
             <div class="form__radio__group">
               <input
