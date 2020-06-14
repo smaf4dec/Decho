@@ -8,6 +8,7 @@ export default class UserForm extends Component {
     this.state = {
       handle: '',
       politicalLean: 'Right',
+      selectedOption: 'option1'
     };
   }
 
@@ -35,7 +36,22 @@ export default class UserForm extends Component {
           <option value="left">Left</option>
           <option value="right">Right</option>
         </select>
-        <input className={'btn btn-primary'} type="submit" />
+        <div className="radio-container">
+          <div className="radio">
+            <label>
+              <input type="radio" value="option1" onChange={this.myChangeHandler}/>
+              Left
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="radio" value="option2" onChange={this.myChangeHandler}/>
+              Right
+            </label>
+          </div>
+        </div>
+        
+        <button className="btn btn-primary" type="submit">Submit</button>
       </form>
     );
   }
