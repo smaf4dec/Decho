@@ -7,6 +7,16 @@
   background: linear-gradient(60deg, #349df3 0 50%, #151d2b 50% 100%);
   /* padding: 0 50vmax; */
 }
+.text-constiner {
+  position: absolute;
+  top: 57vh;
+  left: 20vw;
+  font-size: 25px;
+  color: white;
+  width: 300px;
+  line-height: 28px;
+  text-align: left;
+}
 
 #megaphonoLogo:hover {
   animation: spin 1s infinite linear;

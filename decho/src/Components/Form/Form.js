@@ -1,6 +1,6 @@
 import React, { Component, fragment } from 'react';
 import axios from 'axios';
-import 'Components/Form/radioButton.styles.css';
+import 'Components/Form/Form.styles.css';
 import { ReactComponent as DeChoLogo } from 'assets/logo-orange-sm.svg';
 import twitter from 'assets/twitter.svg';
 // import './Form.styles.css';
@@ -72,35 +72,6 @@ export default class UserForm extends Component {
               onChange={(e) => this.myChangeHandler(e)}
             />
           </div>
-          {/* <div className="politicalLean__input">
-            <div className="form__radio__label" id="title">
-              Political Leaning:
-            </div>
-            <div className="form__radio__group">
-              <input
-                type="radio"
-                className="form__radio__input"
-                id="left"
-                name="politicalLean"
-                onClick={(e) => this.handleRadio(e)}
-              />
-              <label htmlFor="left" className="form__radio__label" id="left">
-                Left
-              </label>
-            </div>
-            <div className="form__radio__group">
-              <input
-                type="radio"
-                className="form__radio__input"
-                id="right"
-                name="politicalLean"
-                onClick={(e) => this.handleRadio(e)}
-              />
-              <label htmlFor="right" className="form__radio__label" id="right">
-                Right
-              </label>
-            </div>
-          </div> */}
 
           <br />
           <div className="politicalLean__input">
