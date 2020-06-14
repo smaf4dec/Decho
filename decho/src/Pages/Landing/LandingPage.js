@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
     return (
       <div>
         <div className="logo">
-          <div id="de-echo-to" className="title">de-Echo</div>
+          <div id="de-echo-to" className="title">De-Echo</div>
         </div>
         <div className="column landing" /*style={{ border: '1px solid black' }}*/>
           <div>
