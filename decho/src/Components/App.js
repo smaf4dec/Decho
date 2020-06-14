@@ -11,7 +11,7 @@ import 'Components/App.css';
 class App extends Component {
   state = {
     currentPage: 'landing',
-    currentLean: 'right',
+    currentLean: 'Right',
     opp: '',
   };
 

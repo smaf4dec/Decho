@@ -7,7 +7,7 @@ export default class UserForm extends Component {
     super(props);
     this.state = {
       handle: '',
-      politicalLean: 'right',
+      politicalLean: 'Right',
     };
   }
 
@@ -27,13 +27,13 @@ export default class UserForm extends Component {
   render() {
     return (
       <form onSubmit={this.mySubmitHandler}>
-        <h1>@{this.state.handle}</h1>
+        <h4>@{this.state.handle}</h4>
         <p>Twitter Handle:</p>
         <input type="text" name="handle" onChange={this.myChangeHandler} />
         <p>Political Leaning:</p>
         <select name="politicalLean" defaultValue="right" onChange={this.myChangeHandler}>
           <option value="left">Left</option>
-          <option value="right">right</option>
+          <option value="right">Right</option>
         </select>
         <input className={'btn btn-primary'} type="submit" />
       </form>

@@ -9,7 +9,7 @@ const TimelinePage = ({ politicalLean, partisan }) => {
   // console.log(partisan)
   return (
     <div class="proto-container">
-      <div className="page-title">De-Echo Feed of {politicalLean === 'right' ? 'Left' : 'Right'}-Leaning Tweets</div>;
+      <div className="page-title">De-Echo Feed of {politicalLean === 'Right' ? 'Left' : 'Right'}-Leaning Tweets</div>;
       <Timeline
         dataSource={{
           sourceType: 'profile',
