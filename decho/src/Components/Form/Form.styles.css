@@ -3,6 +3,7 @@ form {
   top: 70%;
   left: 50%;
   transform: translate(-50%, 0);
+  color: white;
 }
 button {
   width: 200px;
@@ -116,4 +117,27 @@ input #search-bar {
 .icon {
   padding: 10px;
   min-width: 40px;
+}
+
+input[type='radio']::after {
+  font-size: 20px;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+button::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+button:active,
+button:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
 }
