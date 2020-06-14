@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
+
 .App {
   text-align: center;
 }
@@ -28,8 +30,14 @@ body{
   padding: 0 50vmax;
 }
 
+#de-echo-to{
+  color: #FF9D64;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #151D2B;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
