@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  min-height: 100vh;
+  /* background: linear-gradient(45deg, #349DF3 0 50%, #151D2B 50% 100%); */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
