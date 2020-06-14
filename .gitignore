@@ -1,3 +1,2 @@
 .env
-#should .yarn.lock be added to this?
 /node_modules
