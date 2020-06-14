@@ -9,7 +9,7 @@ export default class UserForm extends Component {
     super(props);
     this.state = {
       handle: '',
-      politicalLean: 'right',
+      politicalLean: '',
       selectedOption: 'option1',
     };
   }
@@ -18,21 +18,29 @@ export default class UserForm extends Component {
     event.preventDefault();
     this.props.changePage(this.state.politicalLean);
     this.postToServer();
+    console.log('clicked', event);
   };
 
   myChangeHandler = (event) => {
     let nam = event.target.name;
-    let val = event.target.value;
+    let val = event.target.val;
     this.setState({ [nam]: val });
+    console.log('clicked', val, 'als state', this.state);
   };
 
+  handleRadio = (event) => {
+    let nam = event.target.name;
+    let val = event.target.id;
+    this.setState({ [nam]: val });
+    console.log('clicked', val, 'als state', this.state);
+  };
   postToServer = () => {
-    const handle = this.state.handle;
-    const lean = this.state.politicalLean;
-    if (handle !== undefined && lean !== undefined) {
+    const { handle, politicalLean } = this.state;
+    console.log(this.state, 'whate');
+    if (handle !== undefined && politicalLean !== undefined) {
       axios.post('https://deco-db.herokuapp.com/users', {
         twitterHandle: handle,
-        lean: lean,
+        lean: politicalLean,
       });
     }
   };
@@ -44,8 +52,8 @@ export default class UserForm extends Component {
           {' '}
           <DeChoLogo /> {this.state.handle}
         </h4>
-        <div class="input-icons">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
+        <div className="input-icons">
+          <i className="fa fa-twitter" aria-hidden="true"></i>
           <img
             src={twitter}
             alt=""
@@ -55,8 +63,9 @@ export default class UserForm extends Component {
             id="search-bar"
             type="text"
             name="handle"
+            style={{ paddingLeft: '50px' }}
             placeholder="     Twitter handle"
-            onChange={this.myChangeHandler}
+            onChange={(e) => this.myChangeHandler(e)}
           />
         </div>
         <div className="politicalLean__input">
@@ -64,23 +73,35 @@ export default class UserForm extends Component {
             Political Leaning:
           </div>
           <div className="form__radio__group">
-            <input type="radio" className="form__radio__input" id="left" name="size" />
+            <input
+              type="radio"
+              className="form__radio__input"
+              id="left"
+              name="politicalLean"
+              onClick={(e) => this.handleRadio(e)}
+            />
             <label htmlFor="left" className="form__radio__label" id="left">
-              <span className="form__radio-button"></span>
               Left
             </label>
           </div>
           <div className="form__radio__group">
-            <input type="radio" className="form__radio__input" id="right" name="size" />
+            <input
+              type="radio"
+              className="form__radio__input"
+              id="right"
+              name="politicalLean"
+              onClick={(e) => this.handleRadio(e)}
+            />
             <label htmlFor="right" className="form__radio__label" id="right">
-              <span className="form__radio-button"></span>
               Right
             </label>
           </div>
         </div>
 
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={this.mySubmitHandler}>
+          Submit
+        </button>
       </form>
     );
   }

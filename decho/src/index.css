@@ -1,3 +1,7 @@
+* {
+  background-color: linear-gradient(45deg, #349df3 0 50%, #151d2b 50% 100%);
+}
+
 body {
   background-color: linear-gradient(50deg, #349df3 0 50%, #151d2b 50% 100%);
   margin: 0;
