@@ -1,8 +1,6 @@
 import React from 'react';
 import { Timeline } from 'react-twitter-widgets';
 import 'Pages/Timeline/TimelinePage.styles.css';
-// import './TimelinePage.styles.css';
-// import {getOneOpp} from './partisans/getOpp'
 
 const TimelinePage = ({ politicalLean, partisan }) => {
   console.log(`the partisan is ${partisan.twitterHandle}`);
