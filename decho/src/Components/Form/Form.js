@@ -3,7 +3,6 @@ import axios from 'axios';
 import 'Components/Form/Form.styles.css';
 import { ReactComponent as DeChoLogo } from 'assets/logo-orange-sm.svg';
 import twitter from 'assets/twitter.svg';
-// const API = "http://localhost:3000/users"   // for local development
 const API = "https://deco-db.herokuapp.com/users"
 
 export default class UserForm extends Component {
@@ -34,6 +33,7 @@ export default class UserForm extends Component {
     this.setState({ [nam]: val });
     console.log('clicked', val, 'als state', this.state);
   };
+
   postToServer = () => {
     const { handle, politicalLean } = this.state;
     console.log(this.state, 'whate');
