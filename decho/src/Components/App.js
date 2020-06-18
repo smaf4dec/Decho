@@ -3,10 +3,6 @@ import LandingPage from 'Pages/Landing/LandingPage';
 import TimelinePage from 'Pages/Timeline/TimelinePage';
 import { getOneOppFromServer } from 'Utils/getOpp';
 import 'Components/App.css';
-// import { getOneOppFromServer } from '../Utils/getOpp';
-// import LandingPage from '../Pages/Landing//LandingPage';
-// import TimelinePage from '../Pages/Timeline/TimelinePage';
-// import { getOneOppFromServer } from '../Utils/getOpp';
 
 class App extends Component {
   state = {
