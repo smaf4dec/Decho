@@ -78,29 +78,29 @@ export default class UserForm extends Component {
             <div className="form__radio__label" id="title">
               Political Leaning
             </div>
-            <div class="form__radio__group">
+            <div className="form__radio__group">
               <input
                 type="radio"
-                class="form__radio__input"
+                className="form__radio__input"
                 id="left"
                 name="politicalLean"
                 onClick={(e) => this.handleRadio(e)}
               />
-              <label for="left" class="form__radio__label" id="left">
-                <span class="form__radio-button"></span>
+              <label htmlFor="left" className="form__radio__label" id="left">
+                <span className="form__radio-button"></span>
                 Left
               </label>
             </div>
-            <div class="form__radio__group ">
+            <div className="form__radio__group ">
               <input
                 type="radio"
-                class="form__radio__input"
+                className="form__radio__input"
                 id="right"
                 name="politicalLean"
                 onClick={(e) => this.handleRadio(e)}
               />
-              <label for="right" class="form__radio__label" id="right">
-                <span class="form__radio-button"></span>
+              <label htmlFor="right" className="form__radio__label" id="right">
+                <span className="form__radio-button"></span>
                 Right
               </label>
             </div>
