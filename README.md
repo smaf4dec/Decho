@@ -26,6 +26,6 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 ## How to run
 1. Clone the repo (https://github.com/smaf4dec/smaf4dec.git)
 1. Update your .env file to include "NODE_PATH=src"
-1. run: npm install or yarn
-1. run: npm start or yarn start
+1. run: 'npm install' or 'yarn'
+1. run: 'npm start' or 'yarn start'
 ## We Accept PR
