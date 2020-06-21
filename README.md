@@ -28,4 +28,4 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 1. Update your .env file to include "NODE_PATH=src"
 1. run: 'npm install' or 'yarn'
 1. run: 'npm start' or 'yarn start'
-## We Accept PR
+## We Accept PRs
