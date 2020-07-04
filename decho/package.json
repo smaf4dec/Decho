@@ -14,9 +14,9 @@
     "twit": "^2.2.11"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-scripts start NODE_PATH=src",
+    "build": "react-scripts build NODE_PATH=src",
+    "test": "react-scripts test NODE_PATH=src",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
