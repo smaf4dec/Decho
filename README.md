@@ -23,9 +23,16 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 1. Facebook
 1. Instagram
 
-## How to run
-1. Clone the repo (https://github.com/smaf4dec/smaf4dec.git)
-1. Update your .env file to include "NODE_PATH=src"
+## How to Run App
+1. Clone the repo (git clone https://github.com/smaf4dec/smaf4dec.git)
+1. Create & Update your .env file to include "NODE_PATH=src"
+1. WINDOWS ONLY: Find the 'scripts' section in package.json
+1. WINDOWS ONLY: Move 'NODE_PATH=src' from the beginning of each line to the end of each line (Check Wiki)
+1. WINDOWS ONLY: update your .gitignore to ignore your package.json
 1. run: 'npm install' or 'yarn'
 1. run: 'npm start' or 'yarn start'
-## We Accept PRs
+## How to Contribute
+1. Clone the repo (git clone https://github.com/smaf4dec/smaf4dec.git)
+1. git checkout -b name-of-your-feature
+1. git push origin name-of-your-feature
+1. create a PR in GitHub
