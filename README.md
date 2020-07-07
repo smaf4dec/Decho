@@ -19,7 +19,6 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 1. Twitter
 
 ## Potential Future APIs
-1. Twitter
 1. Facebook
 1. Instagram
 
@@ -36,3 +35,8 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 1. git checkout -b name-of-your-feature
 1. git push origin name-of-your-feature
 1. create a PR in GitHub
+## Contributors
+1. Reese Bowman
+1. Arianna Choza
+1. Calvin Goah
+1. Donovan Richardson
