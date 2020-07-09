@@ -2,7 +2,7 @@
 
 ## smaf4dec: Social Media App for Defeating Echochambers
 
-This project is created with the intention of bursting echochambers and facilitating substantiated social media interactions. The idea was generated at NYC Coder's "Hack for #BlackLivesMatter" hackathon on June 11th-14th of 2020, with the repo being named smaf4dec (Social Media App for Defeating Echo Chambers) and the MVP being named De-Echo. The hackathon team that created the MVP included Calvin Goah, Reese Bowman, Arianna Choza, Donovan Richardson, and our tech shadow, Sanket Patnaik. We also had excellent guidance from our hackathon PM, Omar Jameer, and our hackathon designer, Marisa Ruiz Asari. Since then, the project has undergone some major conceptual, visionary, and branding changes geared towards becoming a viable product called Revrb. We're currently exploring ways to turn this into an open source project powered by the GitHub community.
+This project is created with the intention of bursting echochambers and facilitating substantiated social media interactions. The idea was generated at NYC Coder's "Hack for #BlackLivesMatter" hackathon on June 11th-14th of 2020, with the repo being named smaf4dec (Social Media App for Defeating Echo Chambers) and the MVP being named De-Echo. The hackathon team that created the MVP included Calvin Goah, Reese Bowman, Arianna Choza, Donovan Richardson, and our tech shadow, Sanket Patnaik. We also had excellent guidance from our hackathon PM, Omar Jameer, and our hackathon designer, Marisa Ruiz Asari. Since then, the project has undergone some major conceptual, visionary, and branding changes geared towards becoming a viable product called Revrb.
 
 ## The Problem
 Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained to learn what a user likes, leading to suggestions of more likable content. This is a slippery slope that could lead to the prevalence of echochambers within certain social media sites. Most users readily accept what they see on their social media feeds without doing any research of their own to verify, then assume that their perspective is the most accurate
@@ -30,6 +30,7 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 1. run: 'npm install' or 'yarn'
 1. run: 'npm start' or 'yarn start'
 ## How to Contribute
+1. Check out the issues we're working on
 1. Clone the repo (git clone https://github.com/smaf4dec/smaf4dec.git)
 1. git checkout -b name-of-your-feature
 1. WINDOWS ONLY: If you installed new packages & you wish to push your changes, make sure to revert the NODE_PATH=src changes in your package.json
