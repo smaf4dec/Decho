@@ -21,6 +21,7 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 ## Potential Future APIs
 1. Facebook
 1. Instagram
+1. Reddit
 
 ## How to Run App
 1. Clone the repo (git clone https://github.com/smaf4dec/Revrb.git)
