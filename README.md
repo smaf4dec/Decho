@@ -31,11 +31,11 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 1. run: 'npm start' or 'yarn start'
 ## How to Contribute
 1. Check out the issues we're working on
-1. Clone the repo (git clone https://github.com/smaf4dec/smaf4dec.git)
+1. Clone the repo (git clone https://github.com/smaf4dec/Revrb.git)
 1. git checkout -b name-of-your-feature
 1. WINDOWS ONLY: If you installed new packages & you wish to push your changes, make sure to revert the NODE_PATH=src changes in your package.json
 1. git push origin name-of-your-feature
-1. create a PR for merge to the develop branch in GitHub
+1. create a PR for merge to the master branch in GitHub
 ## Contributors
 1. Reese Bowman
 1. Arianna Choza
