@@ -25,6 +25,8 @@ const counter = (state = 0, action) => {
       return state + 1;
     case "DECREMENT":
       return state - 1;
+    default:
+      return state;
   }
 }
 
@@ -36,6 +38,8 @@ store.subscribe(() => console.log(store.getState()));
 
 //TODO:DISPATCH
 store.dispatch(increment());
+
+store.dispatch(decrement());
 
 ReactDOM.render(
   <React.StrictMode>
