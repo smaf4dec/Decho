@@ -8,8 +8,6 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 const hiddenApiKey = process.env.REACT_APP_FBS_APIKEY;
 const hiddenAuthDomain = process.env.REACT_APP_FBS_AUTHDOMAIN;
-console.log("hiddenApiKey is: " + hiddenApiKey);
-console.log("hiddenAuthDomain is: " + hiddenAuthDomain);
 firebase.initializeApp({
   apiKey: hiddenApiKey,
   authDomain: hiddenAuthDomain

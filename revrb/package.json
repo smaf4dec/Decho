@@ -11,8 +11,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-firebaseui": "^4.1.0",
+    "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "react-twitter-widgets": "^1.9.5",
+    "redux": "^4.0.5",
     "twit": "^2.2.11"
   },
   "scripts": {
