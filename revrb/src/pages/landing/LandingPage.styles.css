@@ -1,0 +1,59 @@
+.logo {
+  z-index: -10;
+  min-width: 50vmin;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: linear-gradient(60deg, #349df3 0 50%, #151d2b 50% 100%);
+  /* padding: 0 50vmax; */
+}
+.text-constiner {
+  position: absolute;
+  top: 57vh;
+  left: 20vw;
+  font-size: 25px;
+  color: white;
+  width: 300px;
+  line-height: 28px;
+  text-align: left;
+}
+
+#megaphonoLogo:hover {
+  animation: spin 1s infinite linear;
+}
+
+#megaphonoLogo {
+  margin: 181px 0 0 104px;
+}
+.column {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .logo {
+    min-width: 50vmin;
+    max-width: 100vw;
+  }
+}
+
+.landing {
+  background: linear-gradient(#349df3, #ffffff);
+  width: 100vw;
+}
+
+#de-echo-to {
+  background-color: #349df3;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  max-width: 20vw;
+  position: relative;
+  margin: auto;
+  top: 20vmin;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
