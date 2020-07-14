@@ -5,6 +5,8 @@ import { getOneOppFromServer } from 'utils/getOpp';
 import 'components/App.css';
 import firebase from 'firebase';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+//import { useSelector, useDispatch } from 'react-redux';
+//import { increment, decrement } from './actions';
 
 const hiddenApiKey = process.env.REACT_APP_FBS_APIKEY;
 const hiddenAuthDomain = process.env.REACT_APP_FBS_AUTHDOMAIN;
