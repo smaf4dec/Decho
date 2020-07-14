@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LandingPage from 'pages/landing/LandingPage';
 import TimelinePage from 'pages/timeline/TimelinePage';
 import { getOneOppFromServer } from 'utils/getOpp';
-import 'Components/App.css';
+import 'components/App.css';
 import firebase from 'firebase';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 

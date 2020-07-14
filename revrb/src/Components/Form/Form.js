@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import 'Components/form/Form.styles.css';
+import 'components/form/Form.styles.css';
 import { ReactComponent as DeChoLogo } from 'assets/logo-orange-sm.svg';
 import twitter from 'assets/twitter.svg';
 const API = "https://deco-db.herokuapp.com/users"

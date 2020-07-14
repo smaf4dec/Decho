@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserForm from 'Components/form/Form';
+import UserForm from 'components/form/Form';
 import 'pages/landing/LandingPage.styles.css';
 import { ReactComponent as DeChoLogo } from 'assets/logo-big.svg';
 
