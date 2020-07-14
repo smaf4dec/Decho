@@ -25,16 +25,12 @@ Current social media algorithms (Twitter, Facebook, Instagram, etc.) are trained
 
 ## How to Run App
 1. Clone the repo (git clone https://github.com/smaf4dec/Revrb.git)
-1. Create & Update your .env file to include "NODE_PATH=src"
-1. WINDOWS ONLY: Find the 'scripts' section in package.json
-1. WINDOWS ONLY: Move 'NODE_PATH=src' from the beginning of each line to the end of each line (Check Wiki)
 1. run: 'npm install' or 'yarn'
 1. run: 'npm start' or 'yarn start'
 ## How to Contribute
 1. Check out the issues we're working on
 1. Clone the repo (git clone https://github.com/smaf4dec/Revrb.git)
 1. git checkout -b name-of-your-feature
-1. WINDOWS ONLY: If you installed new packages & you wish to push your changes, make sure to revert the NODE_PATH=src changes in your package.json
 1. git push origin name-of-your-feature
 1. create a PR for merge to the master branch in GitHub
 ## Contributors
