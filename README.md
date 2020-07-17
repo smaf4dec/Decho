@@ -1,4 +1,4 @@
-# Revrb
+# Rivrb
 
 ## smaf4dec: Social Media App for Defeating Echochambers
 
