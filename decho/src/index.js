@@ -1,7 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'Components/App';
-// import UserForm from 'Components/Form';
+import * as firebase from 'firebase';
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyBMx6x5XAXXewtDpIwp2HKQL-qtghhKDF8",
+  authDomain: "revrb-550da.firebaseapp.com",
+  databaseURL: "https://revrb-550da.firebaseio.com",
+  projectId: "revrb-550da",
+  storageBucket: "revrb-550da.appspot.com",
+  messagingSenderId: "1013414536475",
+  appId: "1:1013414536475:web:592acfc269289112cf5fbe",
+  measurementId: "G-H234B3CQFE"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 ReactDOM.render(
   <React.StrictMode>

@@ -3,7 +3,9 @@ import axios from 'axios';
 import 'Components/Form/Form.styles.css';
 import { ReactComponent as DeChoLogo } from 'assets/logo-orange-sm.svg';
 import twitter from 'assets/twitter.svg';
-const API = "https://deco-db.herokuapp.com/users"
+// const API = "https://deco-db.herokuapp.com/users"
+import firebase from 'firebase'
+import { firebaseConfig } from 'index'
 
 export default class UserForm extends Component {
   constructor(props) {
@@ -38,10 +40,8 @@ export default class UserForm extends Component {
     const { handle, politicalLean } = this.state;
     console.log(this.state, 'whate');
     if (handle !== undefined && politicalLean !== undefined) {
-      axios.post(API, {
-        twitterHandle: handle,
-        lean: politicalLean,
-      });
+      firebase.database().ref(`/users/${handle}`).set(this.state);
+      console.log('data posted to firebase')
     }
   };
 
