@@ -1,4 +1,4 @@
-# Rivrb
+# De-Echo
 
 ## smaf4dec: Social Media App for Defeating Echochambers
 
